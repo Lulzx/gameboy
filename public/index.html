@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Telegram Plays Gameboy</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <script type="text/javascript" src="app.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="console">
+      <div class="screen-border">
+        <div class="screen">
+          <img id="screen" src="boot.gif"/>
+        </div>
+      </div>
+      <div class="dpad">
+        <div class="d d-left" onclick="sendKey(KEY.LEFT)"></div>
+        <div class="d d-right" onclick="sendKey(KEY.RIGHT)"></div>
+        <div class="d d-up" onclick="sendKey(KEY.UP)"></div>
+        <div class="d d-down" onclick="sendKey(KEY.DOWN)"></div>
+        <div class="d d-center"></div>
+      </div>
+      <div class="circular-button button-a" onclick="sendKey(KEY.A)"></div>
+      <div class="circular-button button-b" onclick="sendKey(KEY.B)"></div>
+      <div class="meta-buttons">
+        <div class="meta-button button-select" onclick="sendKey(KEY.SELECT)"></div>
+        <div class="meta-button button-start" onclick="sendKey(KEY.START)"></div>
+      </div>
+      <div class="client-count-container">
+        <span>Connected: </span>
+        <span id="client-count"></span>
+      </div>
+    </div>
+  </body>
+</html>
